@@ -1,5 +1,5 @@
 # Image-Processing
-### Ans 1. 
+### 1. What are Channels and Kernels?
 Channels are containers of a fixed type of objects or features that are extracted from image(s).
 
 Ex: From a picture of many dogs, just the feature nose is used to extract out a part of the image. The collection of all these noses are a channel. 
@@ -14,7 +14,7 @@ Ex: An alphabet 'e' can also be considered as an extractor or a kernel in a text
 
  
 
-### Ans 2. 
+### 2. Why should we (nearly) always use 3x3 kernels? 
 3X3 Kernels are an optimal choice because:
 
 1. It has symmetry without which distortions across the layers can happen when using an even sized kernel.
@@ -29,17 +29,18 @@ Ex: An alphabet 'e' can also be considered as an extractor or a kernel in a text
 
  
 
-### Ans.3 
+### 3. How many times to we need to perform 3x3 convolutions operations to reach close to 1x1 from 199x199 (type each layer output like 199x199 > 197x197...)?
+100 times.
 
 199X199 > 197X197 > 195X195 > 193X193>191X191 > 189X189 > 187X187 > 185X185 > 183X183 > 181X181 > 179X179 > 177X177 > 175X175 > 173X173>171X171 > 169X169 > 167X167 > 165X165 > 163X163 > 161X161 > 159X159 > 157X157 > 155X155 > 153X153>151X151 > 149X149 > 147X147 > 145X145 > 143X143 > 141X141 > 139X139 > 137X137 > 135X135 > 133X133>131X131 > 129X129 > 127X127 > 125X125 > 123X123 > 121X121 >
 119X119 > 117X117 > 115X115 > 113X113>111X111 > 119X119 > 117X117 > 115X115 > 113X113 > 111X111 > 99X99 > 97X97 > 95X95 > 93X93>91X91 > 89X89 > 87X87 > 85X85 > 83X83 > 81X81 > 79X79 > 77X77 > 75X75 > 73X73>71X71 > 69X69 > 67X67 > 65X65 > 63X63 > 61X61 > 59X59 > 57X57 > 55X55 > 53X53>51X51 > 49X49 > 47X47 > 45X45 > 43X43 > 41X41 > 39X39 > 37X37 > 35X35 > 33X33>31X31 > 29X29 > 27X27 > 25X25 > 23X23 > 21X21 > 19X19 > 17X17 > 15X15 > 13X13>11X11 > 9X9 > 7X7 > 5X5 > 3X3 > 1X1
 
  
-### Ans.4 
+### 4. How are kernels initialized?  
 
 Kernels are initialized randomly. 
 
-### Ans. 5
+### 5. What happens during the training of a DNN?
 
 Training of a DNN means finding correct weights for each path(connections) between two layers.
 
